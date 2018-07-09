@@ -16,6 +16,7 @@
 		8F9515F020F3E519007C904C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9515EF20F3E519007C904C /* Login.storyboard */; };
 		8F9515F220F3E610007C904C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9515F120F3E610007C904C /* LoginViewController.swift */; };
 		8F9515F420F4192D007C904C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9515F320F4192D007C904C /* User.swift */; };
+		8F9515F620F41D3F007C904C /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9515F520F41D3F007C904C /* CreateUsernameViewController.swift */; };
 		E79EB40AFA49291394828D35 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C383E4113E8B7629AB1841 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		8F9515EF20F3E519007C904C /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		8F9515F120F3E610007C904C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F9515F320F4192D007C904C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8F9515F520F41D3F007C904C /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		C3E4C1643F69166E5F44E4C0 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 			children = (
 				8F41BC0920F3D204009992B8 /* ViewController.swift */,
 				8F9515F120F3E610007C904C /* LoginViewController.swift */,
+				8F9515F520F41D3F007C904C /* CreateUsernameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				8F9515F420F4192D007C904C /* User.swift in Sources */,
 				8F9515F220F3E610007C904C /* LoginViewController.swift in Sources */,
 				8F41BC0A20F3D204009992B8 /* ViewController.swift in Sources */,
+				8F9515F620F41D3F007C904C /* CreateUsernameViewController.swift in Sources */,
 				8F41BC0820F3D204009992B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
