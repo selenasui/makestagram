@@ -20,4 +20,9 @@ struct Constants {
     struct Tags {
         static let photoTag = 1
     }
+    
+    struct Reference {
+        static let posts = "posts"
+        static let images = "images"
+    }
 }
