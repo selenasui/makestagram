@@ -25,4 +25,10 @@ struct Constants {
         static let posts = "posts"
         static let images = "images"
     }
+    
+    struct Dict {
+        static let image_url = "image_url"
+        static let image_height = "image_height"
+        static let created_at = "created_at"
+    }
 }

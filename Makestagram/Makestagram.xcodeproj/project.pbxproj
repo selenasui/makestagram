@@ -28,6 +28,7 @@
 		8FED703C20F569BC002D6720 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FED703B20F569BC002D6720 /* Post.swift */; };
 		8FED703E20F56DFC002D6720 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FED703D20F56DFC002D6720 /* UIImage+Size.swift */; };
 		8FED704020F56ED7002D6720 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FED703F20F56ED7002D6720 /* StorageReference+Post.swift */; };
+		8FED704820F574A0002D6720 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FED704720F574A0002D6720 /* Home.storyboard */; };
 		E79EB40AFA49291394828D35 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C383E4113E8B7629AB1841 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		8FED703B20F569BC002D6720 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8FED703D20F56DFC002D6720 /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		8FED703F20F56ED7002D6720 /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
+		8FED704720F574A0002D6720 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C3E4C1643F69166E5F44E4C0 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 		8F9515EC20F3E2F2007C904C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				8FED704720F574A0002D6720 /* Home.storyboard */,
 				8F41BC0B20F3D204009992B8 /* Main.storyboard */,
 				8F9515EF20F3E519007C904C /* Login.storyboard */,
 				8F41BC1020F3D204009992B8 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				8F41BC1220F3D204009992B8 /* LaunchScreen.storyboard in Resources */,
 				8F31363820F3DADF00427F31 /* GoogleService-Info.plist in Resources */,
 				8F41BC0F20F3D204009992B8 /* Assets.xcassets in Resources */,
+				8FED704820F574A0002D6720 /* Home.storyboard in Resources */,
 				8F9515F020F3E519007C904C /* Login.storyboard in Resources */,
 				8F41BC0D20F3D204009992B8 /* Main.storyboard in Resources */,
 			);

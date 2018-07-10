@@ -26,11 +26,24 @@ class Post {
         self.creationDate = Date()
     }
     
+    init?(snapshot: DataSnapshot) {
+        guard let dict = snapshot.value as? [String : Any],
+            let imageURL = dict[Constants.Dict.image_url] as? String,
+            let imageHeight = dict[Constants.Dict.image_height] as? CGFloat,
+            let createdAgo = dict[Constants.Dict.created_at] as? TimeInterval
+            else { return nil}
+        
+        self.key = snapshot.key
+        self.imageURL = imageURL
+        self.imageHeight = imageHeight
+        self.creationDate = Date(timeIntervalSince1970: createdAgo)
+    }
+    
     var dictValue: [String : Any] {
         let createdAgo = creationDate.timeIntervalSince1970
         
-        return ["image_url" : imageURL,
-                "image_height" : imageHeight,
-                "created_at" : createdAgo]
+        return [Constants.Dict.image_url : imageURL,
+                Constants.Dict.image_height : imageHeight,
+                Constants.Dict.created_at : createdAgo]
     }
 }
