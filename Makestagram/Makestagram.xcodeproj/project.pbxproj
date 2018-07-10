@@ -21,6 +21,7 @@
 		8F9515F220F3E610007C904C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9515F120F3E610007C904C /* LoginViewController.swift */; };
 		8F9515F420F4192D007C904C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9515F320F4192D007C904C /* User.swift */; };
 		8F9515F620F41D3F007C904C /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9515F520F41D3F007C904C /* CreateUsernameViewController.swift */; };
+		8FED703220F54155002D6720 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FED703120F54155002D6720 /* MainTabBarController.swift */; };
 		E79EB40AFA49291394828D35 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C383E4113E8B7629AB1841 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		8F9515F120F3E610007C904C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F9515F320F4192D007C904C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8F9515F520F41D3F007C904C /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		8FED703120F54155002D6720 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C3E4C1643F69166E5F44E4C0 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				8F9515F520F41D3F007C904C /* CreateUsernameViewController.swift */,
 				8F57E42320F524D3001E56B6 /* HomeViewController.swift */,
 				8F57E42520F524FC001E56B6 /* FindFriendsViewController.swift */,
+				8FED703120F54155002D6720 /* MainTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				8F9515F420F4192D007C904C /* User.swift in Sources */,
 				8F9515F220F3E610007C904C /* LoginViewController.swift in Sources */,
+				8FED703220F54155002D6720 /* MainTabBarController.swift in Sources */,
 				8F4E9B0120F42993003D5A30 /* UserService.swift in Sources */,
 				8F57E42420F524D3001E56B6 /* HomeViewController.swift in Sources */,
 				8F13ED8B20F471DA00BFCA71 /* Storyboard+Utility.swift in Sources */,
