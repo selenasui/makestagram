@@ -31,4 +31,8 @@ struct Constants {
         static let image_height = "image_height"
         static let created_at = "created_at"
     }
+    
+    struct Cell {
+        static let postImageCell = "PostImageCell"
+    }
 }
