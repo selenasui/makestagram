@@ -34,5 +34,8 @@ struct Constants {
     
     struct Cell {
         static let postImageCell = "PostImageCell"
+        static let postHeaderCell = "PostHeaderCell"
+        static let postActionCell = "PostActionCell"
+        static let cellsInSection = 3
     }
 }
