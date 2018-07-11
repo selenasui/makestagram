@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0C442020F6A47E00E24AA7 /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C441F20F6A47E00E24AA7 /* LikeService.swift */; };
 		8F13ED8920F470D200BFCA71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F13ED8820F470D200BFCA71 /* Constants.swift */; };
 		8F13ED8B20F471DA00BFCA71 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F13ED8A20F471DA00BFCA71 /* Storyboard+Utility.swift */; };
 		8F31363820F3DADF00427F31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F31363720F3DADF00427F31 /* GoogleService-Info.plist */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		34C383E4113E8B7629AB1841 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F900B33E1EB253D9C33AE8 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		8F0C441F20F6A47E00E24AA7 /* LikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeService.swift; sourceTree = "<group>"; };
 		8F13ED8820F470D200BFCA71 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8F13ED8A20F471DA00BFCA71 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		8F31363720F3DADF00427F31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				8F4E9B0020F42993003D5A30 /* UserService.swift */,
 				8FED703720F566A0002D6720 /* StorageService.swift */,
 				8FED703920F567F6002D6720 /* PostService.swift */,
+				8F0C441F20F6A47E00E24AA7 /* LikeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				8FED703220F54155002D6720 /* MainTabBarController.swift in Sources */,
 				8F4E9B0120F42993003D5A30 /* UserService.swift in Sources */,
 				8F89636520F68ADC004F889A /* PostActionCell.swift in Sources */,
+				8F0C442020F6A47E00E24AA7 /* LikeService.swift in Sources */,
 				8FED703C20F569BC002D6720 /* Post.swift in Sources */,
 				8F58552420F66C7200DE939F /* PostImageCell.swift in Sources */,
 				8FED703E20F56DFC002D6720 /* UIImage+Size.swift in Sources */,

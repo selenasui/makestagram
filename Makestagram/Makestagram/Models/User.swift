@@ -26,7 +26,7 @@ class User: Codable {
     
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
-            let username = dict["username"] as? String
+            let username = dict[Constants.Dict.username] as? String
             else { return nil }
         
         self.uid = snapshot.key
