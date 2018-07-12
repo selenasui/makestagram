@@ -39,8 +39,6 @@ struct LikeService {
                     success(true)
                 }
             })
-            
-            return success(true)
         }
     }
     
@@ -73,8 +71,6 @@ struct LikeService {
                     success(true)
                 }
             })
-            
-            return success(true)
         }
     }
     
