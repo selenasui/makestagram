@@ -12,31 +12,59 @@ import FirebaseDatabase
 struct FollowService {
     private static func followUser(_ user: User, forCurrentUserWithSuccess success: @escaping (Bool) -> Void) {
         let currentUID = User.current.uid
-        let followData = ["followers/\(user.uid)/\(currentUID)" : true,
-                          "following/\(currentUID)/\(user.uid)" : true]
+        let followData = ["\(Constants.Dict.followers)/\(user.uid)/\(currentUID)" : true,
+                          "\(Constants.Dict.following)/\(currentUID)/\(user.uid)" : true]
         
         let ref = Database.database().reference()
         ref.updateChildValues(followData) { (error, _) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
+                success(false)
             }
             
-            success(error == nil)
+            UserService.posts(for: user) { (posts) in
+                let postKeys = posts.compactMap { $0.key }
+                
+                var followData = [String : Any]()
+                let timelinePostDict = [Constants.Dict.poster_uid : user.uid]
+                postKeys.forEach { followData["\(Constants.Reference.timeline)/\(currentUID)/\($0)"] = timelinePostDict }
+                
+                ref.updateChildValues(followData, withCompletionBlock: { (error, ref) in
+                    if let error = error {
+                        assertionFailure(error.localizedDescription)
+                    }
+                    
+                    success(error == nil)
+                })
+            }
         }
     }
     
     private static func unfollowUser(_ user: User, forCurrentUserWithSuccess success: @escaping (Bool) -> Void) {
         let currentUID = User.current.uid
-        let followData = ["followers/\(user.uid)/\(currentUID)" : NSNull(),
-                          "following/\(currentUID)/\(user.uid)" : NSNull()]
+        let followData = ["\(Constants.Dict.followers)/\(user.uid)/\(currentUID)" : NSNull(),
+                          "\(Constants.Dict.following)/\(currentUID)/\(user.uid)" : NSNull()]
         
         let ref = Database.database().reference()
         ref.updateChildValues(followData) { (error, ref) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
+                success(false)
             }
             
-            success(error == nil)
+            UserService.posts(for: user, completion: { (posts) in
+                var unfollowData = [String : Any]()
+                let postsKeys = posts.compactMap { $0.key }
+                postsKeys.forEach { unfollowData["\(Constants.Reference.timeline)/\(currentUID)/\($0)"] = NSNull() }
+                
+                ref.updateChildValues(unfollowData, withCompletionBlock: { (error, ref) in
+                    if let error = error {
+                        assertionFailure(error.localizedDescription)
+                    }
+                    
+                    success(error == nil)
+                })
+            })
         }
     }
     

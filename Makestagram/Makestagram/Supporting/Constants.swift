@@ -27,6 +27,7 @@ struct Constants {
         static let users = "users"
         static let postLikes = "postLikes"
         static let followers = "followers"
+        static let timeline = "timeline"
     }
     
     struct Dict {
@@ -36,7 +37,10 @@ struct Constants {
         static let username = "username"
         static let like_count = "like_count"
         static let poster = "poster"
+        static let poster_uid = "poster_uid"
         static let uid = "uid"
+        static let followers = "followers"
+        static let following = "following"
     }
     
     struct Cell {

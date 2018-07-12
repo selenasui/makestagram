@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
         return dateFormatter
     }()
     
+    let refreshControl = UIRefreshControl()
+    
     // MARK: - Subviews
     
     @IBOutlet weak var tableView: UITableView!
@@ -32,9 +34,17 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         configureTableView()
-        
-        UserService.posts(for: User.current) { (posts) in
+        reloadTimeline()
+    }
+    
+    @objc func reloadTimeline() {
+        UserService.timeline { (posts) in
             self.posts = posts
+            
+            if self.refreshControl.isRefreshing {
+                self.refreshControl.endRefreshing()
+            }
+            
             self.tableView.reloadData()
         }
     }
@@ -43,6 +53,9 @@ class HomeViewController: UIViewController {
         tableView.tableFooterView = UIView()
         
         tableView.separatorStyle = .none
+        
+        refreshControl.addTarget(self, action: #selector(reloadTimeline), for: .valueChanged)
+        tableView.addSubview(refreshControl)
     }
     
 }
@@ -60,7 +73,7 @@ extension HomeViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Cell.postHeaderCell) as! PostHeaderCell
-            cell.usernameLabel.text = User.current.username
+            cell.usernameLabel.text = post.poster.username
             
             return cell
         
